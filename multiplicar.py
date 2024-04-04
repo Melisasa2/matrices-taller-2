@@ -1,3 +1,11 @@
+def rotar_matriz(matriz):
+    return list(zip(*matriz))
+
+def obtener_forma(matriz):
+    if type(matriz) != list or not matriz:
+        return []
+    return [len(matriz), *obtener_forma(matriz[0])]
+
 def multiplicar_matrices(matriz1, matriz2):
     matriz_rotada = rotar_matriz(matriz2)
     forma_matriz1 = obtener_forma(matriz1)
