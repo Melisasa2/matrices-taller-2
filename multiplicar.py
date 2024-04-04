@@ -24,3 +24,11 @@ def multiplicar_matrices(matriz1, matriz2):
             fila_producto.append(suma)
         producto.append(fila_producto)
     return producto
+    
+filas = 100
+columnas = 100
+
+matriz1 = [[random.random() for _ in range(columnas)] for _ in range(filas)]
+matriz2 = [[random.random() for _ in range(columnas)] for _ in range(filas)]
+
+multiplicar_matrices(matriz1, matriz2)
