@@ -1,3 +1,7 @@
+
+import random
+import time
+
 def rotar_matriz(matriz):
     return list(zip(*matriz))
 
